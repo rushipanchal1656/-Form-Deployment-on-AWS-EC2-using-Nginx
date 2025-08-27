@@ -4,6 +4,16 @@ This project demonstrates how to deploy a web form on an Amazon EC2 instance usi
 
 ---
 
+## Table of Contents
+
+- [Project Structure](#-project-structure)
+- [Deployment Steps](#-deployment-steps)
+- [How to Make It Work](#-how-to-make-it-work)
+- [All Steps](#all-steps)
+- [Author](#-author)
+
+---
+
 ## 📁 Project Structure
 
 ```bash
@@ -26,7 +36,7 @@ project-root/
 - Choose Amazon Linux 2 AMI
 - Allow HTTP (port 80) in the security group
 
-![EC2 Setup](./assets/EC2_image.png)
+<img src="./assets/EC2_image.png" alt="EC2 Setup" width="400"/>
 
 ---
 
@@ -40,6 +50,9 @@ ssh -i your-key.pem ec2-user@your-ec2-public-ip
 
 ### 3. Install Nginx on EC2
 
+<details>
+<summary>Click to expand detailed Nginx setup instructions</summary>
+
 ```bash
 sudo yum update -y
 sudo amazon-linux-extras enable nginx1
@@ -48,7 +61,13 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
 
-![EC2 Setup](./assets/step_1.png)
+</details>
+
+<p float="left">
+  <img src="./assets/step_1.png" width="400"/>
+  <img src="./assets/step_2.png" width="400"/>
+  <img src="./assets/step_3.png" width="400"/>
+</p>
 
 ---
 
@@ -65,17 +84,17 @@ sudo cp style.css /usr/share/nginx/html/
 
 ### 5. Add Port number 90
 
-![EC2 Setup](./assets/add_90_port.png)
+<img src="./assets/add_90_port.png" alt="EC2 Setup" width="400"/>
 
-![EC2 Setup](./assets/90_port_added.png)
+<img src="./assets/90_port_added.png" alt="EC2 Setup" width="400"/>
 
 ### 5. View Your Form
 
 Open your browser and go to:
 <http://13.222.240.188:90>
 
-![EC2 Setup](./assets/about.png)
-![EC2 Setup](./assets/login.png)
+<img src="./assets/about.png" alt="EC2 Setup" width="400"/>
+<img src="./assets/login.png" alt="EC2 Setup" width="400"/>
 
 ---
 
@@ -98,42 +117,47 @@ Let me know if you'd like to include form source code, live demo links, or auto-
 
 ### All Steps
 
-#### 1
+#### 1st step
 
-![EC2 Setup](./assets/step_1.png)
+<img src="./assets/step_1.png" alt="step 1" width="400"/>
 
-#### 2
+#### 2nd step
 
-![EC2 Setup](./assets/step_2.png)
+<img src="./assets/step_2.png" alt="step 2" width="400"/>
 
-#### 3
+#### 3rd step
 
-![EC2 Setup](./assets/step_3.png)
+<img src="./assets/step_3.png" alt="step 3" width="400"/>
 
-#### 4
+#### 4th step  
 
-![alt text](./assets/step_5.png)
+<img src="./assets/step_5.png" alt="step 4" width="400"/>
 
-#### 5
+#### 5th step
 
-![alt text](./assets/step_6.png)
+<img src="./assets/step_6.png" alt="step 5" width="400"/>
 
-#### 6
+#### 6th step
 
-![alt text](./assets/step_7.png)
+<img src="./assets/step_7.png" alt="step 6" width="400"/>
 
-#### 7
+#### 7th step
 
-![alt text](./assets/step_8.png)
+<img src="./assets/step_8.png" alt="step 7" width="400"/>
 
-#### 8
+#### 8th step
 
-![alt text](./assets/step_9.png)
+<img src="./assets/step_9.png" alt="step 8" width="400"/>
 
-#### 9
+#### 9th step
 
-![alt text](./assets/step_10.png)
+<img src="./assets/step_10.png" alt="step 9" width="400"/>
 
-#### 10
+#### 10th step
 
-![alt text](./assets/step_11.png)
+<img src="./assets/step_11.png" alt="step 10" width="400"/>
+
+---
+
+- **Live Demo:** [View Form](http://13.222.240.188:90)
+- **Author:** [Rushikesh Panchal](https://www.linkedin.com/in/your-linkedin)
